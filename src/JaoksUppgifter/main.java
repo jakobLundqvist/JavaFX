@@ -7,12 +7,13 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 public class main extends Application {
 
-	public static final double WINDOW_WIDTH = 800;
-	public static final double WINDOW_HEIGHT = 600;
+	public static final double WINDOW_WIDTH = 1000;
+	public static final double WINDOW_HEIGHT = 800;
 	public static final double raket_SIZE = 75;
 
 	public static final ArrayList<KeyCode> keys = new ArrayList<KeyCode>();
@@ -26,7 +27,7 @@ public class main extends Application {
 
 		Group root = new Group();
 
-		Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT, Color.GREY);
+		Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT, Color.BLACK);
 
 		Raket raket = new Raket(raket_SIZE);
 
@@ -39,6 +40,30 @@ public class main extends Application {
 			}
 
 		});
+
+		for (int i = 0; i < 120; i++) {
+
+			Circle cir = new Circle(0.6);
+
+			root.getChildren().add(cir);
+
+			cir.setTranslateX(WINDOW_WIDTH * Math.random());
+			cir.setTranslateY(WINDOW_HEIGHT * Math.random());
+
+			cir.setFill(Color.YELLOW);
+		}
+
+		for (int i = 0; i < 8; i++) {
+
+			Circle cir = new Circle(Math.random() * 30 + 50);
+
+			root.getChildren().add(cir);
+
+			cir.setTranslateX(WINDOW_WIDTH * Math.random());
+			cir.setTranslateY(WINDOW_HEIGHT * Math.random());
+
+			cir.setFill(Color.CHOCOLATE);
+		}
 
 		scene.setOnKeyReleased(event -> {
 
