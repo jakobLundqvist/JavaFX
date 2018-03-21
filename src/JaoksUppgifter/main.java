@@ -26,7 +26,7 @@ public class main extends Application {
 
 		Group root = new Group();
 
-		Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT);
+		Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT, Color.GREY);
 
 		Raket raket = new Raket(raket_SIZE);
 
