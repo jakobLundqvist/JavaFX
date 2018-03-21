@@ -23,7 +23,7 @@ public class bRuta extends Application {
 		
 		scene.setFill(Color.SKYBLUE);
 		
-		for (int i = 0; i < 50; i++){
+		for (int i = 0; i < 40; i++){
 			Studsboll boll = new Studsboll();
 			boll.setTranslateX((WINDOW_WIDTH - boll.getRadius() * 2) * Math.random() + boll.getRadius());
 			boll.setTranslateY((WINDOW_HEIGHT - 200) * Math.random() + boll.getRadius());

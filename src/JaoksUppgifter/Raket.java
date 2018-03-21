@@ -17,11 +17,11 @@ public class Raket extends Group {
 		Rectangle top = new Rectangle(width / 3, 3 * width / 3);
 
 		Polygon righttriangle = new Polygon();
-		righttriangle.getPoints().addAll(new Double[] { 25.0, 75.0, 25.0, 40.0, 60.0, 75.0 });
+		righttriangle.getPoints().addAll(new Double[] { 25.0, 75.0, 25.0, 40.0, 60.0, 95.0 });
 		righttriangle.setFill(Color.BLACK);
 		
 		Polygon lefttriangle = new Polygon();
-		lefttriangle.getPoints().addAll(new Double[] { 0.0, 75.0, 0.0, 40.0, -35.0, 75.0 });
+		lefttriangle.getPoints().addAll(new Double[] { 0.0, 75.0, 0.0, 40.0, -35.0, 95.0 });
 		lefttriangle.setFill(Color.BLACK);
 		
 		Polygon toptriangle = new Polygon();
