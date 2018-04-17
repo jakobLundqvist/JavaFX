@@ -41,29 +41,7 @@ public class main extends Application {
 
 		});
 
-		for (int i = 0; i < 120; i++) {
-
-			Circle cir = new Circle(0.6);
-
-			root.getChildren().add(cir);
-
-			cir.setTranslateX(WINDOW_WIDTH * Math.random());
-			cir.setTranslateY(WINDOW_HEIGHT * Math.random());
-
-			cir.setFill(Color.YELLOW);
-		}
-
-		for (int i = 0; i < 8; i++) {
-
-			Circle cir = new Circle(Math.random() * 30 + 50);
-
-			root.getChildren().add(cir);
-
-			cir.setTranslateX(WINDOW_WIDTH * Math.random());
-			cir.setTranslateY(WINDOW_HEIGHT * Math.random());
-
-			cir.setFill(Color.CHOCOLATE);
-		}
+		
 
 		scene.setOnKeyReleased(event -> {
 
@@ -136,6 +114,30 @@ public class main extends Application {
 
 		primaryStage.setScene(scene);
 		primaryStage.show();
+		
+		for (int i = 0; i < 120; i++) {
+
+			Circle cir = new Circle(0.6);
+
+			root.getChildren().add(cir);
+
+			cir.setTranslateX(WINDOW_WIDTH * Math.random());
+			cir.setTranslateY(WINDOW_HEIGHT * Math.random());
+
+			cir.setFill(Color.YELLOW);
+		}
+
+		for (int i = 0; i < 8; i++) {
+
+			Circle cir = new Circle(Math.random() * 30 + 50);
+
+			root.getChildren().add(cir);
+
+			cir.setTranslateX(WINDOW_WIDTH * Math.random());
+			cir.setTranslateY(WINDOW_HEIGHT * Math.random());
+
+			cir.setFill(Color.CHOCOLATE);
+		}
 
 	}
 
