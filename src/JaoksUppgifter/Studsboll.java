@@ -10,7 +10,7 @@ public class Studsboll extends Circle {
 
 	private static ArrayList<Studsboll> bollar = new ArrayList<Studsboll>();
 	private static AnimationTimer gravity;
-	private static double g = 0.98;
+	private static double g = 0.28;
 
 	private double speedY;
 	private double speedX;

@@ -10,14 +10,16 @@ public class CardDeck {
 	
 	public CardDeck(){
 		
-		for(int i = 1; i <= 4; i++){
-			
-			for(int j = 2; j <= 14; j++){
-				
-				BJCard c = new BJCard(i, j);
-				cards.add(c);
-				
-			}
+		for (int k = 0; k < 9; k++) {
+			for (int i = 1; i <= 4; i++) {
+
+				for (int j = 2; j <= 14; j++) {
+
+					BJCard c = new BJCard(i, j);
+					cards.add(c);
+
+				}
+			} 
 		}
 		
 	}
@@ -33,7 +35,4 @@ public class CardDeck {
 	public void shuffle(){
 		Collections.shuffle(cards);
 	}
-	
-	
-
 }
