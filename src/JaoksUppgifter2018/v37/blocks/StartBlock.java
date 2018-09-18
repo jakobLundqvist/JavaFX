@@ -1,4 +1,4 @@
-package blocks;
+package JaoksUppgifter2018.v37.blocks;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;

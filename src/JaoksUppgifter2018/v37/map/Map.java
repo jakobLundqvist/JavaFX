@@ -1,4 +1,4 @@
-package map;
+package JaoksUppgifter2018.v37.map;
 
 import java.util.ArrayList;
 
