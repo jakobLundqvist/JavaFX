@@ -2,7 +2,7 @@ package JaoksUppgifter2018.v37.map;
 
 import java.util.ArrayList;
 
-import blocks.Block;
+import JaoksUppgifter2018.v37.blocks.Block;
 import javafx.scene.Group;
 
 public class Map extends Group {

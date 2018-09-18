@@ -2,7 +2,6 @@ package JaoksUppgifter2018.v37.map;
 
 import java.io.File;
 
-import blocks.Block;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;

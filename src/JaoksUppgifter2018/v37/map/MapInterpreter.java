@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 import com.sun.org.apache.xpath.internal.compiler.OpCodes;
 
-import blocks.Block;
-import blocks.ClosedBlock;
-import blocks.GoalBlock;
-import blocks.OpenBlock;
-import blocks.StartBlock;
+import JaoksUppgifter2018.v37.blocks.Block;
+import JaoksUppgifter2018.v37.blocks.ClosedBlock;
+import JaoksUppgifter2018.v37.blocks.GoalBlock;
+import JaoksUppgifter2018.v37.blocks.OpenBlock;
+import JaoksUppgifter2018.v37.blocks.StartBlock;
 import javafx.scene.paint.Color;
 
 public class MapInterpreter {
