@@ -12,7 +12,6 @@ public class CardDeck {
 		
 		for (int k = 0; k < 9; k++) {
 			for (int i = 1; i <= 4; i++) {
-
 				for (int j = 2; j <= 14; j++) {
 
 					BJCard c = new BJCard(i, j);
@@ -29,7 +28,6 @@ public class CardDeck {
 		cards.remove(0);
 		 
 		return card;
-		
 	}
 	
 	public void shuffle(){

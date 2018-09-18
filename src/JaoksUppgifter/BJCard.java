@@ -8,58 +8,57 @@ import javafx.scene.text.Text;
 
 public class BJCard extends Group {
 
-
 	public static final double WIDTH = 100;
 	public static final double HEIGHT = 150;
 
 	private String suit;
 	private int value;
 
-	public BJCard(int suit, int value){
+	public BJCard(int suit, int value) {
 
-		if (suit < 1)suit = 1;
-		if (suit > 4)suit = 4;
-		if (value < 2)value = 2;
-		if (value > 14)value = 14;
+		if (suit < 1)
+			suit = 1;
+		if (suit > 4)
+			suit = 4;
+		if (value < 2)
+			value = 2;
+		if (value > 14)
+			value = 14;
 
+		if (suit == 1)
+			this.suit = "Hearts";
+		if (suit == 2)
+			this.suit = "Spades";
+		if (suit == 3)
+			this.suit = "Diamonds";
+		if (suit == 4)
+			this.suit = "Clubs";
 
-		if (suit == 1)this.suit = "Hearts";
-		if (suit == 2)this.suit = "Spades";
-		if (suit == 3)this.suit = "Diamonds";
-		if (suit == 4)this.suit = "Clubs";
-
-		this.value = value;		
+		this.value = value;
 
 		Text colorText = new Text();
 		colorText.setText(this.suit);
 
 		Text valueText = new Text();
-		if (this.value == 11){
+		if (this.value == 11) {
 			valueText.setText("J");
 			this.value = 10;
-		}
-		else if (this.value == 12){
+		} else if (this.value == 12) {
 			valueText.setText("Q");
 			this.value = 10;
-		}else if (this.value == 13){
+		} else if (this.value == 13) {
 			valueText.setText("K");
 			this.value = 10;
-		}
-		else if (this.value == 14){
+		} else if (this.value == 14) {
 			valueText.setText("A");
 			this.value = 11;
-		}
-		else
+		} else
 			valueText.setText(this.value + "");
-		
-		
 
 		Rectangle background = new Rectangle(WIDTH, HEIGHT);
 		background.setFill(Color.WHITE);
 		background.setStroke(Color.BLACK);
 		background.setStrokeWidth(5);
-
-
 
 		colorText.setFont(new Font(20));
 		valueText.setFont(new Font(50));
@@ -85,8 +84,8 @@ public class BJCard extends Group {
 
 	}
 
-	public int getValue(){
+	public int getValue() {
 		return this.value;
 	}
-	
+
 }

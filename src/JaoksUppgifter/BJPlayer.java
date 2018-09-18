@@ -1,8 +1,6 @@
 package JaoksUppgifter;
 
 import java.util.ArrayList;
-
-import javafx.animation.AnimationTimer;
 import javafx.scene.Group;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -24,16 +22,35 @@ public class BJPlayer extends Group {
 		handValue = new Text();
 		hit();
 		hit();
-
 	}
 
-	public int getHandValue() {
+	public int getHandValue(){
+	
 		int sum = 0;
+		int ACounter = 0;
 
-		// for(BJCard c : hand){
 		for (int i = 0; i < hand.size(); i++) {
 			BJCard c = hand.get(i);
-			sum += c.getValue();
+			int temp = c.getValue();
+			
+			if(temp == 14){
+				ACounter ++;
+				temp = 11;
+			}
+			
+			sum += temp;
+		}
+		
+		for(BJCard card : hand){
+			if(card.getValue() == 11){
+				ACounter ++;
+			}
+		}
+		
+		for (int i = 0; i < ACounter; i++) {
+			if(sum > 21){
+				sum -= 10;
+			}
 		}
 		return sum;
 	}

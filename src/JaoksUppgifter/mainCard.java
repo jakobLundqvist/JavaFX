@@ -35,7 +35,6 @@ public class mainCard extends Application {
 		players.add(player1);
 
 		player1.playerBoard();
-
 		for (int i = 1; i < 3; i++) {
 
 			BJBot player2 = new BJBot();
