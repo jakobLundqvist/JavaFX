@@ -4,14 +4,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import com.sun.org.apache.xpath.internal.compiler.OpCodes;
-
 import JaoksUppgifter2018.v37.blocks.Block;
 import JaoksUppgifter2018.v37.blocks.ClosedBlock;
 import JaoksUppgifter2018.v37.blocks.GoalBlock;
 import JaoksUppgifter2018.v37.blocks.OpenBlock;
 import JaoksUppgifter2018.v37.blocks.StartBlock;
-import javafx.scene.paint.Color;
 
 public class MapInterpreter {
 
