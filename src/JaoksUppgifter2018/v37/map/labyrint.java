@@ -17,8 +17,6 @@ public class labyrint extends Application {
 
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		
-		
 
 	}
 
