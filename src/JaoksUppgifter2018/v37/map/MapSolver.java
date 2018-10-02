@@ -33,16 +33,16 @@ public class MapSolver {
 
 		switch (dir) {
 		case 1:
-			x--;
+			y++;
 			break;
 		case 2:
-			y--;
+			x--;
 			break;
 		case 3:
-			x++;
+			y--;
 			break;
 		case 4:
-			y++;
+			x++;
 			break;
 
 		default:
@@ -77,7 +77,7 @@ public class MapSolver {
 						x*Block.SIZE+circleSize,
 						y*Block.SIZE+circleSize,
 						circleSize,
-						Color.BLACK));
+						Color.CORAL));
 
 		if(dir == 1){
 
