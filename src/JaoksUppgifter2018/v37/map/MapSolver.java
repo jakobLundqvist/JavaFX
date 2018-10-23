@@ -108,6 +108,10 @@ public class MapSolver {
 
 		}
 
+		if(!win){
+			path.remove(path.get(path.size()-1));
+		}
+		
 	}
 
 }
